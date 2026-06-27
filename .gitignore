@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# wiki/ 생성물 — aggregate.py 가 재생성하는 파생물 (추적 안 함).
+# 유지: index.html(뷰어 셸), *.example.md(샘플)
+wiki/index.md
+wiki/todos.md
+wiki/adr.md
+wiki/_sidebar.md
+wiki/projects/

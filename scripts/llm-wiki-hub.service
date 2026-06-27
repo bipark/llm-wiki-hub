@@ -1,0 +1,7 @@
+# Linux systemd user service. HUB 경로를 실제 경로로 바꿀 것.
+[Unit]
+Description=LLM-Wiki-Hub aggregate
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/llm-wiki-hub/scripts/aggregate.py

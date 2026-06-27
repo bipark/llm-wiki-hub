@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM-Wiki-Hub 대시보드</title>
+  <meta name="description" content="흩어진 프로젝트들의 읽기 전용 집계 대시보드">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root { --theme-color: #42b983; }
+    .refresh-btn {
+      position: fixed; top: 12px; right: 16px; z-index: 1000;
+      background: var(--theme-color); color: #fff; padding: 6px 12px;
+      border-radius: 6px; text-decoration: none; font-size: 13px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    }
+    .refresh-btn:hover { opacity: .9; }
+    .markdown-section table { display: table; width: 100%; }
+  </style>
+</head>
+<body>
+  <!-- 서버(/refresh)가 즉시 재집계 후 / 로 리다이렉트 -->
+  <a class="refresh-btn" href="/refresh" title="지금 다시 집계">↻ 새로고침</a>
+  <div id="app">로딩 중…</div>
+  <script>
+    window.$docsify = {
+      name: 'LLM-Wiki-Hub',
+      homepage: 'index.md',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      relativePath: true,
+      // 하위 디렉토리(projects/)에서도 같은 사이드바 사용
+      alias: { '/.*/_sidebar.md': '/_sidebar.md' },
+      search: { placeholder: '검색', noData: '결과 없음', depth: 3 },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>

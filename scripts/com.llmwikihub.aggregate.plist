@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- macOS launchd: 5분마다 집계 실행. HUB 경로를 실제 경로로 바꿀 것. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.llmwikihub.aggregate</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/path/to/llm-wiki-hub/scripts/aggregate.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>300</integer>
+    <key>StandardErrorPath</key>
+    <string>/tmp/llmwikihub.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/llmwikihub.out</string>
+</dict>
+</plist>
