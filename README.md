@@ -8,6 +8,9 @@
 LLM-Wiki-Hub 는 그게 귀찮아서 만들어본 도구다. 흩어진 프로젝트들을 되도록 건드리지 않고,
 그 위에 살짝 얹어서 한 화면으로 보려고 한 읽기 전용 대시보드 정도라고 보면 된다.
 
+> 왜, 어떤 흐름으로 이걸 만들게 됐는지에 대한 더 긴 이야기는 따로 적어뒀다 —
+> [LLM-Wiki 로 LLM-Wiki 들을 관리하기](blog/llm-wiki로-llm-wiki들을-관리하기.md).
+
 ## 어쩌다 만들게 됐나
 
 먼저 각 프로젝트를 [Karpathy 의 "LLM Wiki" 패턴](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
