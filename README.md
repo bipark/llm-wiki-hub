@@ -11,7 +11,7 @@ LLM-Wiki-Hub 는 그게 귀찮아서 만들어본 도구다. 흩어진 프로젝
 > 왜, 어떤 흐름으로 이걸 만들게 됐는지에 대한 더 긴 이야기는 따로 적어뒀다 —
 > [LLM-Wiki 로 LLM-Wiki 들을 관리하기](blog/llm-wiki로-llm-wiki들을-관리하기.md).
 
-## 어쩌다 만들게 됐나
+## 왜 만들었나?
 
 먼저 각 프로젝트를 [Karpathy 의 "LLM Wiki" 패턴](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 을 참고해서 정리하기 시작했다. 코드 옆에 LLM(나는 Claude Code 를 쓴다)이 같이 읽고
