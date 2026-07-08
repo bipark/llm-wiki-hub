@@ -6,3 +6,5 @@
 # ~/work/esp32-mesh
 # ~/work/sensor-svc
 # ~/projects/lidar-monitor
+
+~/GitHub/camera_measurement_system
